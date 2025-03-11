@@ -34,7 +34,8 @@ type classification = {
 interface scale {
     id: number
     name: string
-    range: number[]
+    description: string
+    range: range
     questions: question[]
     classification: classification
     result: classification
@@ -49,7 +50,8 @@ export class Scale implements scale {
     constructor(
         public id: number,
         public name: string,
-        public range: number[],
+        public description: string,
+        public range: range,
         public questions: question[],
         public classification: classification, // Added missing classification
         public result: classification,

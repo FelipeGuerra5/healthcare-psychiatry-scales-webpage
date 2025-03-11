@@ -1,0 +1,56 @@
+{
+    "id": 1,
+    "name": "SICAD",
+    "description": "Sistema de Classificação do Nível de Dependencia de Cuidado na especialidade Álcool e outras drogas",
+    "range": {
+        "min": 11,
+        "max": 33
+    },
+    "questions": [
+        {
+            "id": 1,
+            "title": "Aspectos gerais",
+            "range": {
+                "min": 1,
+                "max": 3
+            },
+            "possibleAnswer": {
+                "minimal": {
+                    "description": "Preservado quanto à higiene, vestimentas e condições de cuidar de seus objetos pessoais. Algumas vezes pode necessitar de estímulo.",
+                    "value": 1
+                },
+                "intermediate": {
+                    "description": "Parcialmente descuidado, desinteressado pelo autocuidado. Precisa ser auxiliado para higienizar-se e vestir-se. Apresenta poucas condições de cuidar de objetos pessoais.",
+                    "value": 2
+                },
+                "highDepending": {
+                    "description": "Apresenta higiene precária, aparência descuidada, vestes inadequadas, sem condições de cuidar dos objetos pessoais. Dependente para realizar estas atividades.",
+                    "value": 3
+                }
+            }
+        }
+    ],
+    "classification": {
+        "minimal": {
+            "range": {
+                "min": 11,
+                "max": 13
+            },
+            "description": "Grau  de dependência mínima"
+        },
+        "intermediate": {
+            "range": {
+                "min": 14,
+                "max": 20
+            },
+            "description": "Grau de dependência intermediária"
+        },
+        "highDepending": {
+            "range": {
+                "min": 21,
+                "max": 33
+            },
+            "description": "Alta dependência"
+        }
+    }
+}
