@@ -9,12 +9,14 @@ type range = {
     max: number
 }
 
-type question = {
+export type question = {
     id: number
+    type: string
     title: string
     range: range
     possibleAnswer: answer[]
     chosenValue: number
+    textarea?: string
 }
 
 type classificationType = {
@@ -35,8 +37,9 @@ export interface scale {
     range: range
     questions: question[]
     classification: classification
-    result: classification
+    result: classificationType
     sum: number
+    diagnosis?: string
     // getQuestions(): question[]
     // getSum(): number
     // getResult(): classificationType
